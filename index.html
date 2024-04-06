@@ -90,6 +90,22 @@
           text-align: center;
           display: inline-block;
         }
+        .price-small {
+          width: 100% !important;
+          text-align: center;
+          padding: 10px 0 !important;
+        }
+        .terms-small {
+          text-align: center;
+        }
+      }
+      @media screen and (max-width: 450px) {
+        .order-summary-cell {
+          font-size: 0.75rem;
+        }
+        .billing-text {
+          padding-top: 5px;
+        }
       }
       @media screen and (max-width: 399.98px) {
       }
@@ -377,7 +393,7 @@
                   </p>
                 </td>
                 <td
-                  class="column"
+                  class="column price-small"
                   width="33.33%"
                   align="center"
                   border="0"
@@ -414,7 +430,7 @@
                     $109.99
                   </p>
                   <p
-                    class="text-sm"
+                    class="text-sm product-purchased-column"
                     style="
                       text-align: right;
                       padding: 0;
@@ -509,13 +525,17 @@
                   <hr
                     style="border: 1px solid #d8d8d8; margin: 5px 0px 5px 0px"
                   />
-                  <span style="font-weight: bold; color: #5c700e"
+                  <span
+                    class="order-summary-cell"
+                    style="font-weight: bold; color: #5c700e"
                     >Merchandise Savings</span
                   ><br />
                   <hr
                     style="border: 1px solid #d8d8d8; margin: 5px 0px 5px 0px"
                   />
-                  Standard Ground Shipping<br />
+                  <span class="order-summary-cell"
+                    >Standard Ground Shipping</span
+                  ><br />
                   <hr
                     style="border: 1px solid #d8d8d8; margin: 5px 0px 5px 0px"
                   />
@@ -677,6 +697,7 @@
                     "
                   />
                   <p
+                    class="billing-text"
                     style="
                       display: inline-block;
                       vertical-align: middle;
@@ -684,7 +705,7 @@
                       font-size: 1.1rem;
                     "
                   >
-                    ending in 1234
+                    *1234
                   </p>
                 </td>
                 <td
@@ -849,7 +870,7 @@
           >
             <p
               class="text-sm"
-              style="font-size: 1rem; padding: 0 45px; margin: 0"
+              style="font-size: 1rem; padding: 45px 45px 0; margin: 0"
             >
               If you do not wish to receive special offers, promotions, and
               other email marketing communications from KitchenAid,
@@ -868,6 +889,7 @@
             width="100%"
             align="left"
             border="0"
+            class="terms-small"
             style="
               width: 100%;
               padding: 20px 0px 0px;
